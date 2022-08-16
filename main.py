@@ -258,7 +258,7 @@ def onmessage(update,bot:ObigramClient):
         tl_admin_user = os.environ.get('tl_admin_user')
 
         #set in debug
-        tl_admin_user = 'studio_apps_dev'
+        tl_admin_user = 'AlejandroPupo2001'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -278,7 +278,7 @@ def onmessage(update,bot:ObigramClient):
         else:
             mensaje = "Hola👋 @"+username+"\nSoy un bot de descargas gratis en Cuba a través de Moodle, cualquier duda puedes contactar con el soporte."
             reply_markup = inlineKeyboardMarkup(
-                r1=[inlineKeyboardButton('⚙Soporte⚙',url='https://t.me/studio_apps_dev')]
+                r1=[inlineKeyboardButton('⚙Soporte⚙',url='https://t.me/AlejandroPupo2001')]
             )
             bot.sendMessage(update.message.chat.id,mensaje,reply_markup=reply_markup)
             jdb.create_user(username)
@@ -574,7 +574,7 @@ def onmessage(update,bot:ObigramClient):
         if '/start' in msgText:
             mensaje = "Hola👋 @"+username+"\nSoy un bot de descargas gratis en Cuba a través de Moodle, cualquier duda puedes contactar con el soporte."
             reply_markup = inlineKeyboardMarkup(
-                r1=[inlineKeyboardButton('⚙Soporte⚙',url='https://t.me/studio_apps_dev')]
+                r1=[inlineKeyboardButton('⚙Soporte⚙',url='https://t.me/AlejandroPupo2001')]
             )
             bot.editMessageText(message,mensaje,reply_markup=reply_markup)
         elif '/reupload' in msgText:
