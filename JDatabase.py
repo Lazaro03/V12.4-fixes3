@@ -51,7 +51,7 @@ class JsonDatabase(object):
                      'moodle_password': '',
                      'isadmin': 1,
                      'zips': 240,
-                     'uploadtype':'draft',
+                     'uploadtype':'evidence',
                      'proxy':'',
                      'token': '',
                      'tokenize':0,
